@@ -1,5 +1,11 @@
 # Backend
 
+REST backend for an MS SQL Server.
+Use e.g. `mix phoenix.gen.json Order orders site_id:string start_dt:date end_dt:date`
+to generate additional models and controllers.
+
+# Phoenix
+
 To start your Phoenix app:
 
   1. Install dependencies with `mix deps.get`
