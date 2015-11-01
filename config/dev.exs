@@ -34,10 +34,15 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :backend, Backend.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "postgres",
+  password: "postgres",
+  database: "backend_dev"
+# SQL server on Windows machine:
 #  adapter: Ecto.Adapters.Mssql,
-  username: "mssql",
-  password: "mssql",
-  database: "backend_dev",
-  hostname: "gebruik-9q8i9nb.local"
+#  username: "mssql",
+#  password: "mssql",
+#  database: "backend_dev",
+#  hostname: "gebruik-9q8i9nb.local"
 #  ,
 #  pool_size: 10
